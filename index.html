@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FitnessDotCom Survey</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+</head>
+<main>
+
+  <body>
+
+    <div class="box">
+      <div class="img">
+        <img src="./background.jpg" alt="">
+      </div>
+      <header>
+        <h1 id="title">FitnessDotCom</h1>
+        <p id="description">A survey about fitness</p>
+      </header>
+      <form id="survey-form" class="survey-form" action="index.html" method="post">
+        <fieldset>
+          <label id="name-label" for="name">Name:</label>
+          <br>
+          <input class="box-size" id="name" type="text" name="name" placeholder="Enter your name" required>
+          <br>
+          <br>
+          <label id="email-label" for="email">Email:</label>
+          <br>
+          <input class="box-size" id="email" type="email" name="email" placeholder="Enter your email" required>
+          <br>
+          <br>
+          <label id="number-label" for="age">Age:</label>
+          <br>
+          <input class="box-size" id="number" type="number" name="age" placeholder="Age" pattern=“^[0–9]$” min="1" max="150" required>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown">Which type of sport do you prefer the most?</label>
+          <br>
+          <select class="box-size" id="dropdown" class="dropdown" name="dropdown">
+            <option value="dropdown">Football</option>
+            <option value="dropdown">Basketball</option>
+            <option value="dropdown">Tennis</option>
+            <option value="dropdown">Swimming</option>
+            <option value="dropdown">Other</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <p>Do you have a fitness subscription?</p>
+          <input class="radio-size" id="sub" type="radio" name="sub" value="Yes">
+
+          <label class="font-small" for="sub">Yes</label>
+          <br>
+          <input class="radio-size" id="sub" type="radio" name="sub" value="no">
+          <label class="font-small" for="sub">No</label>
+        </fieldset>
+        <fieldset>
+          <p>What drinks do you like the most?</p>
+          <label class="font-small" for="checkbox">
+            <input class="checkbox-size" type="checkbox" name="checkbox" value="Water">
+            Water
+          </label>
+          <br>
+          <label class="font-small" for="checkbox">
+            <input class="checkbox-size" type="checkbox" name="checkbox" value="Energy">
+            Energy Drinks
+          </label>
+          <br>
+          <label class="font-small" for="checkbox">
+            <input class="checkbox-size" type="checkbox" name="checkbox" value="Coke">
+            Coke
+          </label>
+          <br>
+          <label class="font-small" for="checkbox">
+            <input class="checkbox-size" type="checkbox" name="checkbox" value="Juice">
+            Juice
+          </label>
+          <br>
+          <label class="font-small" for="checkbox">
+            <input class="checkbox-size" type="checkbox" name="checkbox" value="Tee">
+            Tee
+          </label>
+          <br>
+          <label class="font-small" for="checkbox">
+            <input class="checkbox-size" type="checkbox" name="checkbox" value="Coffee">
+            Coffe
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="comment">If you want to leave feedback or have any comments:</label>
+
+          <textarea class="text-size" id="comment" name="comment" rows="8" cols="80"></textarea>
+        </fieldset>
+        <fieldset>
+          <input id="submit" class="submit-here" type="submit" name="submit" value="Submit Here">
+        </fieldset>
+
+      </form>
+
+
+
+
+
+    </div>
+  </body>
+</main>
+
+</html>

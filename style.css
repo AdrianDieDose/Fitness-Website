@@ -1,0 +1,155 @@
+body {
+  margin: 0px 0px;
+}
+
+main {
+  font-family: 'Spartan', sans-serif;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-template-rows: minmax(100px, 937px) repeat(3, minmax(100px, 1fr));
+}
+
+header {
+  grid-row: 1 / 1;
+  grid-column: 1 / 5;
+  margin: 0px 0px;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  z-index: 10;
+  color: white;
+  background-color: rgba(0, 0, 0, 60%);
+  border: 3px solid rgba(255, 110, 25, 100%);
+  height: 200px;
+  width: 1000px;
+}
+
+header h1 {
+  font-size: 80px;
+  margin: 10px 50px 0px 50px;
+  padding-top: 50px;
+}
+
+header p {
+  font-size: 40px;
+  padding-top: 40px;
+}
+
+.img {
+  position: fixed;
+  width: 100%;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+}
+
+form {
+  color: white;
+  background-color: rgba(0, 0, 0, 60%);
+  display: grid;
+  grid-row: 2/ span 6;
+  grid-column: 2 / span 2;
+  width: 100%;
+  max-width: 1000px;
+  height: 1500pX;
+  justify-self: center;
+  border: 3px solid rgba(255, 110, 25, 100%);
+  padding: 50px 100px 0px 100px;
+  z-index: 10;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+fieldset {
+  border: 0px solid black;
+  margin: 0px 0px;
+  padding: 20px 0px;
+  align-self: center;
+}
+
+fieldset:hover {
+  background-color: rgba(0, 0, 0, 0%);
+  border-radius: 4%;
+  animation-name: darker;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+fieldset p {
+  padding: 0px 0px;
+  margin: 0px 0px;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+fieldset label {
+  font-size: 20px;
+}
+
+textarea {
+  width: 100%;
+}
+
+.font-small {
+  font-size: 15px;
+}
+
+.box-size {
+  display: grid;
+  width: 100%;
+  max-width: 1000px;
+  height: 30px;
+  color: -internal-light-dark-color(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  align-items: center;
+  background-color: -internal-light-dark-color(white, black);
+  border-radius: 0px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: orange;
+  font-size: 15px;
+}
+
+.radio-size {
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox-size {
+  width: 20px;
+  height: 20px;
+}
+
+.text-size {}
+
+.submit-here {
+  width: 100px;
+  height: 25px;
+  font-family: 'Spartan', sans-serif;
+  padding-right: 94px;
+}
+
+.submit-here:hover {
+  border: 2px solid rgba(255, 110, 25, 100%);
+}
+
+@keyframes darker {
+  0% {
+    background-color: rgba(0, 0, 0, 0%);
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 15%);
+  }
+}
