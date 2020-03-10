@@ -70,11 +70,11 @@ fieldset {
   margin: 0px 0px;
   padding: 20px 0px;
   align-self: center;
+  border: 1px solid rgba(255, 110, 25, 0%);
 }
 
 fieldset:hover {
   background-color: rgba(0, 0, 0, 0%);
-  border-radius: 4%;
   animation-name: darker;
   animation-duration: 2s;
   animation-iteration-count: 1;
@@ -131,8 +131,6 @@ textarea {
   height: 20px;
 }
 
-.text-size {}
-
 .submit-here {
   width: 100px;
   height: 25px;
@@ -144,12 +142,16 @@ textarea {
   border: 2px solid rgba(255, 110, 25, 100%);
 }
 
+.text-size {
+  width: 850px;
+}
+
 @keyframes darker {
   0% {
-    background-color: rgba(0, 0, 0, 0%);
+    border: 1px solid rgba(255, 110, 25, 0%);
   }
 
   100% {
-    background-color: rgba(0, 0, 0, 15%);
+    border: 1px solid rgba(255, 110, 25, 8%);
   }
 }
